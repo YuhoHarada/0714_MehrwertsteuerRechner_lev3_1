@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Mehrwertsterer Rechner</title>
+</head>
+<body>
+    <h1>Mehrwertsteuer-Rechner</h1>
+    <section id="hero">
+        <form action="" id="form1">
+            <h2>Was soll berechnet werden?</h2>
+            <div>
+                <input type="radio" name="NorB" id="NzuB" value="NzuB" onclick="funcNorB(0)" checked>
+                <label for="NzuB">Mehrwertsterer aufschlangen (Netto zu Brutto)</label>
+            </div>
+            <div>
+                <input type="radio" name="NorB" id="BzuN" value="BzuN" onclick="funcNorB(1)">
+                <label for="BzuN">Mehrwertsterer abziehen (Brutto zu Netto)</label>
+            </div>
+            <h2>Mehrwertsterersatz</h2>
+            <div>
+                <input type="radio" name="MWSteuer" id="S19" value="1.19" checked>
+                <label for="S19">19%</label>
+                <input type="radio" name="MWSteuer" id="S7" value="1.07">
+                <label for="S7">7%</label>
+            </div>
+            <h2 id="nettoOrBrutto">Nettobetrag (Preis ohne Mehrwertsterer) in Euro</h2>
+            <div>
+                <input type="number" name="" id="inputNum">
+            </div>
+            <div>
+                <input type="button" value="BERECHNEN" onclick="berechnen()">
+            </div>
+        </form>
+        <hr>
+        <h4>Ergebnis</h4>
+        <h3>Mehrwertstererbetrag</h3>
+        <p id="resultM">- €</p>
+        <h3 id="resultNorB">Bruttobetrag (Endpreis)</h3>
+        <p id="resultBetrag">- €</p>
+    </section>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

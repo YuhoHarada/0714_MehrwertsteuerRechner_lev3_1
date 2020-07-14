@@ -1,0 +1,52 @@
+body{
+    color: #333;
+}
+
+#hero{
+    width: 400px;
+    border: 1px solid #666;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+h2{
+    font-size: 16px;
+}
+
+div{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+input{
+    box-sizing: border-box;
+    width: 100%;
+    margin: 5px 10px 5px 0;
+    color: #333;
+}
+
+input[type=radio]{
+    width: auto;
+}
+
+input#S7{
+    margin-left: 30px;
+}
+
+input[type=button]{
+    background: lightblue;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px #999;
+    padding: 10px 0;
+}
+
+h4{
+    color: darkblue;
+}
+
+p{
+    font-weight: bold;
+    letter-spacing: 1px;
+}
